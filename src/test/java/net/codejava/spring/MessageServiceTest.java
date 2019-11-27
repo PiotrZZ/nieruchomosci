@@ -15,12 +15,12 @@ public class MessageServiceTest {
     @DisplayName("Test 2")
     @Test
     void testGet2() {
-       assertTrue(true);
+       assertTrue(false);
     }
     
     @DisplayName("Test 3")
     @Test
     void testGet3() {
-       assertTrue(true);
+       assertTrue(false);
     }
 }
