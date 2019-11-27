@@ -6,9 +6,15 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 public class MessageServiceTest {
 
-    @DisplayName("Test MessageService.get()")
+    @DisplayName("Test 1")
     @Test
-    void testGet() {
+    void test1() {
+       assertTrue(true);
+    }
+    
+    @DisplayName("Test 2")
+    @Test
+    void testGet2() {
        assertTrue(true);
     }
 }
