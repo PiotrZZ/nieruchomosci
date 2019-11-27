@@ -1,0 +1,5 @@
+pl\pzabek\CustomerService.class
+pl\pzabek\AppConfig.class
+pl\pzabek\model\Customer.class
+pl\pzabek\repository\CustomerRepository.class
+pl\pzabek\CustomerTest.class
