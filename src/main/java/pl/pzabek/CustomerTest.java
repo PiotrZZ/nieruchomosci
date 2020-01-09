@@ -21,9 +21,30 @@ public class CustomerTest {
 	    object.process();
 	    object.process();
 
-		Samochod sam = appContext.getBean(Samochod.class);
-		sam.setName("samochod");
-		System.out.println(sam.getName());
+//	    LoggingAspect log = (LoggingAspect) appContext.getBean(LoggingAspect.class);
+//	    System.out.println(log!=null ? "true":"null");
+	    
+	    Samochod sam2 = (Samochod) appContext.getBean(Samochod.class);
+	    sam2.setName("Fiat");
+	    System.out.println(sam2.getName());
+	    sam2.debug();
+	    
+	    try
+	    {
+	    sam2.setPrice(5.000);
+	    }
+	    catch (Exception e) {
+//	    	e.printStackTrace();
+		}
+	    sam2.debug();
+	    sam2.debug();
+	    sam2.debug();
+	    
+//		Samochod sam = appContext.getBean(Samochod.class);
+//		sam.setName("samochod");
+//		
+		
+//		System.out.println(sam.getName());
 		appContext.close();
 	}
 }

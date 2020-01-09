@@ -13,12 +13,12 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @Configuration
 @EnableJpaRepositories(basePackages = {"pl.pzabek"})
-@ComponentScan(basePackages = {"pl.pzabek.aop"})
+@ComponentScan(basePackages = {"pl.pzabek"})
 public class AppConfig {
 	@Bean
 	public LocalEntityManagerFactoryBean entityManagerFactory() {
 		LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
-		factoryBean.setPersistenceUnitName("DbMySQL2");
+		factoryBean.setPersistenceUnitName("DbMySQL");
 		return factoryBean;
 	}
 	
@@ -28,4 +28,9 @@ public class AppConfig {
 		transactionManager.setEntityManagerFactory(entityManagerFactory);
 		return transactionManager;
 	}	
+	
+//	@Bean(name = "sam2")
+//	public Samochod getSam2() {
+//		return new Samochod();
+//	}
 }
