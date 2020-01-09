@@ -14,6 +14,7 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 @Configuration
 @EnableJpaRepositories(basePackages = {"pl.pzabek"})
 @ComponentScan(basePackages = {"pl.pzabek"})
+///
 public class AppConfig {
 	@Bean
 	public LocalEntityManagerFactoryBean entityManagerFactory() {
