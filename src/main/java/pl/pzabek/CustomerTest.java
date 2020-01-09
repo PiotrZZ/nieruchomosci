@@ -4,7 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import pl.pzabek.proxy.ExpensiveObject;
 import pl.pzabek.proxy.ExpensiveObjectProxy;
-
+////
 public class CustomerTest {
 
 	public static void main(String[] args) 
