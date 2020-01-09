@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 //@EnableTransactionManagement
+//////
 public class Samochod implements ISamochod {
 
 	private String name;
