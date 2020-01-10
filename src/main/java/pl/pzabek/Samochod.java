@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 //@EnableTransactionManagement
-//TO BEDZIE NOWYKOMENTARZ
+//TO BEDZIE NOWYKOMENTARZ !!!!
 public class Samochod implements ISamochod {
 
 	private String name;
